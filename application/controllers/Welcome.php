@@ -15,11 +15,13 @@ class Welcome extends CI_Controller {
 	}
 
 	function validar()
-}
+{
+
 //echo "Hola<br>";
-		//Aqui estamos recibiendo los datos del formulario eva1.php.
-		$name = $this->input->post('nombre');
-		$lastname = $this->input->post('apellido');
+		//Aqui estamos recibiendo los datos del formulario eva3.php.
+		$name = $this->input->post('nombre1');
+		$lastname = $this->input->post('apellido1');
+		$correo = $this->input->post('DirecciondeEmail');
 
 		echo "Nombre: ".$name."  Apellido: ".$lastname;
 
@@ -29,3 +31,7 @@ class Welcome extends CI_Controller {
 		//Aqui se llama la funcion para guardar en la BD
 		$this->form_model->guardar($data);
 		//}
+
+		}
+
+	}

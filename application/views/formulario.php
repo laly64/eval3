@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <form class="form">
       <input type="text" name="nombre1" placeholder="primer nombre" class="textbox" />
       <input type="text" name="Apellido1" placeholder="Apellido1" class="textbox" />
-      <input type="text" name="correo1" placeholder="Direccion de Email" class="textbox" />
+      <input type="text" name="DirecciondeEmail" placeholder="Direccion de Email" class="textbox" />
       <input type="button" value="Next" class="button" />
     </form>
   </div>
