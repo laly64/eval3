@@ -15,7 +15,7 @@ class form_model extends CI_Model
 	//Esta funcion es la que guarda en la Base de Datos
 	function guardar($data)
 	{
-		$query = $this->db->insert('usuarios', array('nombre1'=>$data['nombre'], 'apellido1'=>$data['apellido'], 'DirecciondeEmail'=>$data['DirecciondeEmail']));
+	$query = $this->db->insert('usuarios',array('nombre1'=>$data['nombre'],'apellido1'=>$data['apellido'],'correo'=>$data['correo']));
 
 		if ($this->db->affected_rows() > 0) 
 		{

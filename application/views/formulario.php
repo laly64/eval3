@@ -19,14 +19,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <li class="tab" ><img src="https://i.imgur.com/34Q50wo.png" alt="" class="icon"/></li>
       <li class="tab" ><img src="https://i.imgur.com/LCCJ06E.png" alt="" class="icon"/></li>
     </ul>
-    
-    <form class="form">
-      <input type="text" name="nombre1" placeholder="primer nombre" class="textbox" />
-      <input type="text" name="Apellido1" placeholder="Apellido1" class="textbox" />
-      <input type="text" name="DirecciondeEmail" placeholder="Direccion de Email" class="textbox" />
-      <input type="button" value="Next" class="button" />
-    </form>
-  </div>
+
+    <?php echo form_open("Welcome/validar")?>
+
+      <input type="text" name="nombre1" placeholder="primer nombre" class="textbox" name="nombre1"/>
+      <input type="text" name="apellido1" placeholder="apellido1" class="textbox" name="apellido1/>
+      <input type="text" name="correo" placeholder="correo" class="textbox" name="correo"/>
+      <input type="submit" value="Next" class="button" />
+
+    <?php echo form_close()?>
+
+   </div>
 </div>
 
 <a href="http://dribbble.com/shots/1265587-Registration-Template-PSD?list=everyone" target="_blank">Design by: Asif Aleem</a>
